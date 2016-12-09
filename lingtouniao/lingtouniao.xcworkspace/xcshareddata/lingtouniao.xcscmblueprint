@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++2387",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++2387" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    },
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++4149" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++2387" : 9223372036854775807,
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++4149" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "413D26CB-FB25-4041-B582-AB40BEA0E709",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++2387" : "trunk\/",
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++4149" : "lingtouniao_1.3.2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "lingtouniao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "lingtouniao\/lingtouniao.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.18.23:8443\/svn\/ios_ltn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++2387"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.18.23:8443\/svn\/ios_ltn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++4149"
+    }
+  ]
+}

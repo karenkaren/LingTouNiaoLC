@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReplaceHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根据实际情况的不同可能需要提交额外资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iO9-4y-8dk">
+                    <rect key="frame" x="20" y="15" width="335" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="7p3-3P-hUG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.24313725490196078" green="0.24313725490196078" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如在换卡过程中有任何疑问" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rJ-5H-6cE">
+                    <rect key="frame" x="20" y="37" width="335" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="92l-ZC-Ibz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peT-GP-0wX">
+                    <rect key="frame" x="20" y="59" width="335" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="KkA-dX-cvw"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="可拨打客服电话">
+                            <attributes>
+                                <color key="NSColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <color key="NSColor" red="0.24313725489999999" green="0.24313725489999999" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="400-999-9980">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2rJ-5H-6cE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="7aJ-Ir-6yv"/>
+                <constraint firstItem="peT-GP-0wX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="89x-TK-DXp"/>
+                <constraint firstItem="iO9-4y-8dk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F5v-Aj-TgY"/>
+                <constraint firstAttribute="trailing" secondItem="peT-GP-0wX" secondAttribute="trailing" constant="20" id="FG3-dv-H4J"/>
+                <constraint firstItem="peT-GP-0wX" firstAttribute="top" secondItem="2rJ-5H-6cE" secondAttribute="bottom" id="FSr-at-yRe"/>
+                <constraint firstAttribute="trailing" secondItem="iO9-4y-8dk" secondAttribute="trailing" constant="20" id="L9z-Zs-Foy"/>
+                <constraint firstItem="iO9-4y-8dk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="P9N-uU-7KA"/>
+                <constraint firstAttribute="trailing" secondItem="2rJ-5H-6cE" secondAttribute="trailing" constant="20" id="Q9D-KG-8bQ"/>
+                <constraint firstItem="2rJ-5H-6cE" firstAttribute="top" secondItem="iO9-4y-8dk" secondAttribute="bottom" id="cMl-Uu-62c"/>
+                <constraint firstItem="iO9-4y-8dk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="w08-eM-ROX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="change_bank_card_1_Label" destination="iO9-4y-8dk" id="RsB-Si-ExX"/>
+                <outlet property="change_bank_card_2_Label" destination="2rJ-5H-6cE" id="mPH-22-PFW"/>
+                <outlet property="change_bank_card_3_Label" destination="peT-GP-0wX" id="T3h-z9-vi7"/>
+            </connections>
+            <point key="canvasLocation" x="276.5" y="255.5"/>
+        </view>
+    </objects>
+</document>

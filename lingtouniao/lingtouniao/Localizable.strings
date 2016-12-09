@@ -1,0 +1,979 @@
+/* 
+  Localizable.strings
+  lingtouniao
+
+  Created by zhangtongke on 16/7/27.
+  Copyright © 2016年 lingtouniao. All rights reserved.
+*/
+
+
+/*
+ 模块划分，每个子模块内部也要根据需要进行字模块划分 字模块内部根据需要可有公共的模块 公共用到的模块㩕出来  ，根据每个模块进行locaitonstring 搜索 如果搜索到了公共部分字段，在公共部分里边没有，则添加进去，同时告诉其他成员，已经添加了某个公共字段 合并 
+ 
+ 
+  先行整理的模块：
+ 1） 公共字段 ，网络
+ 2）任务
+ 3）注册，登录， 实名， 邦卡，充值， 体现， 免密 ，
+ 4）启动页， 分享 ，根控制器 ，砸金蛋 ，手势密码
+ 5）标的详情 ，理财列表，投资
+ 6）首页理财列表 我的帐户 关于我们
+ 7） 所有子模块公共字段放在最前面
+ */
+
+
+//模块整理将以文件夹来分，搜索文件里locationstring，比较与未本地化的字段是否一致，如果一致说明正确，放入相应的模块里，模块根据各自的目录整理，有疑问及时沟通。如果碰上有相同的字段，考虑清楚他各自的用途 每个字段与之前字段进行比较， 每完成一个小模块，合并一次，校验
+///////////////////////////////////////////////////////////////
+/*
+ 公共字段
+ */
+
+//
+"btn_confirm" = "确定";
+"btn_confirm_yes" = "确认";
+"btn_cancel" = "取消";
+"cancel" = "取消";
+"submit" = "提交";
+"back" = "返回";
+"btn_modify" = "修改";
+"btn_resubmit" = "重新申请";
+"dialog_call_service_title" = "温馨提示";
+"action_settings" = "设置";
+"need_new_version" = "您需要更新最新版本";
+"login_immediately" = "立即登录";
+"hint" = "提示";
+"realname_text" = "您未完成用户实名认证，为了您的资金安全，请进行实名认证!";
+"should_bound_bank" = "您未绑定银行卡，请先进行绑卡!";
+"know" = "我知道了";
+"update_title" = "版本更新";//ios
+"update_btn" = "去更新";//ios
+"ignore_update" = "忽略升级";//ios
+"mobile_num" = "手机号";
+"mobile_corrected" = "请填写正确的手机号";
+"unit" = "万元";
+"money_unit" = "%@万元";
+"amount_yuan_decimal" = "%.2f元";
+"next" = "下一步";
+"bindbank_text" = "您未完成银行卡绑定，绑定银行卡后方可进行充值投资，要不绑一张试试？";
+"login_label_signin" = "登录";
+"login_label_register" = "注册";
+"goto_verifyed_real_name" = "去实名";
+"bind_bank_now1" = "马上绑卡";
+"think_again" = "我再想想";
+"login_status_error" = "您的帐号在其他终端登录，如果非您本人操作，请尽快修改密码。";
+"notification" = "通知";
+"go_look" = "去看看";
+"analytical_data_type_mismatch_error" = "解析错误[数据类型不匹配]";
+"analytical_error" = "数据解析出错";
+"not_login_should" = "您还没有登录，请先登录";
+
+// 鸟币
+"bird_coin_help" = "1.什么是鸟币\n鸟币是领投鸟上的一种虚拟货币，可通过投资变现。\n2.使用秘籍\n可在投资中（不含活期和新手标）抵扣等额现金，如投资1000元，使用10鸟币抵扣10元，则实际支付990元，到期可得1000元及其利息。";
+
+// base web
+"share" = "分享";
+"open_use_safar" = "用Safari打开";
+"copy_link" = "复制链接";
+"empyt_network_address" = "地址为空";
+"copy_success" = "复制成功";
+
+// Utility
+"warn" = "请在iPhone里的设置-隐私-照片选项中,允许领投鸟访问你的手机相册";
+"no_sex" = "不知道性别";
+"boy" = "男孩";
+"girl" = "女孩";
+"brother" = "双胞胎兄弟";
+"sister" = "双胞胎姐妹";
+"twin" = "龙凤胎";
+"multiple_birth" = "多胞胎";
+"client_line" = "%@客服热线";
+"call_client" = "呼叫客服";
+
+//金额错误
+"amount_type_error" = "您输入的金额有误，请重新输入";
+"amount_should_interger" = "您输入金额必须为整数";
+"amount_upper_limit_error" = "输入的金额不能大于10000元";
+"product_detail_toast6" = "输入的金额不能小于起投金额:%.2f元";
+"product_detail_toast5" = "输入的金额不能大于剩余金额";
+"amount_multiple_tequire_error" = "输入金额的最小递增数须为%.2f的整数倍";
+"amount_form_error1" = "亲，最多输入10位数字哦！";
+"amount_form_error2" = "亲，第一个数字不能为0";
+"amount_form_error3" = "亲，您输入的格式不正确";
+"amount_form_error4" = "亲，最多输入10个字符哦！";
+"amount_form_error5" = "亲，您已经输入过小数点了";
+"amount_form_error6" = "亲，您最多输入两位小数";
+
+
+"amount_digits_error" = "输入的金额应最多为小数点后2位";
+"amount_small_error" = "输入的投资金额请大于0";
+"amonut_grenter" = "输入的投资金额大于每笔限额";
+
+"outnumber_single_limit_amount" = "投资金额超过了单笔投资上限";
+"outnumber_total_limit_amount" = "投资金额超过了单人投资上限";
+"read_agreement" = "我已阅读并同意";
+
+///////////////////////////////////////////////////////////////
+/*
+ other 包括第三方用到的字符串
+ */
+
+//app评论
+"comment_title" = "亲,给个好评呗";
+"comment_good" = "去给个好评";
+"comment_refuse" = "拒绝";
+
+"no_send_message" = "不能发送短信";
+"send_failure" = "发送失败";
+
+///////////////////////////////////////////////////////////////
+/*
+ 网络相关 提示语等
+ */
+"unable_to_connect_to_server" = "不能连接服务器";
+"network_is_not_good" = "网络不太给力哦~";
+"empty_data" = "暂无数据";
+"no_more_data" = "暂无更多数据";
+"pull_to_refresh_refreshing_label" = "数据加载中...";
+"net_empty_title" = "暂无网络链接";
+"click_screen_reload" = "点击屏幕 重新加载";
+"network_error" = "网络异常";
+"loading_failure" = "加载没有成功哦～～";
+"try_again" = "重试";
+"open_network" = "请您先开启网络";
+
+"load_text1" = "上拉显示更多";
+"load_text2" = "松开显示更多";
+"loading" = "载入中";
+"last_update" = "最后更新: %@";
+"release_refresh" = "释放刷新";
+"pull_refresh" = "下拉刷新";
+
+
+///////////////////////////////////////////////////////////////
+
+/*
+ 启动页
+ */
+"go_taste" = "立即体验";
+/**
+ *  运营页
+ */
+"yunying_skip" = "跳过";
+"yunying_detail" = "查看详情";
+
+///////////////////////////////////////////////////////////////
+
+/*
+ 　分享
+ */
+"share_utils_content" = "年化收益8.8%-18%，安全可靠，透明可查，真正的第三方资金托管";
+"share_utils_title" = "送你88元，来领投鸟安心理财";
+
+///////////////////////////////////////////////////////////////
+
+/*
+ 手势密码
+ */
+"unlock_gesture_welcome2" = "欢迎,%@";
+"modify_gesture_original" = "请绘制原手势密码";
+"modify_gesture_new" = "请绘制手势密码";
+"setup_gesture_code_new" = "请绘制新手势密码";
+"setup_gesture_souping" = "您已经被锁屏，请%@分钟后再试";
+"locked_should_wait" = "您已经被锁屏，请稍等片刻！";
+"gesture_code_error_no_chance" = "很抱歉，密码错误，还有0次机会";
+"setup_gesture_error_pass" = "手势密码错误，您还有%@次机会";
+"setup_gesture_error" = "最少连接4个点, 请重新输入";
+"setup_gesture_code_again" = "请再次绘制手势密码";
+"setup_gesture_code_new_again" = "请再次绘制新手势密码";
+"setup_gesture_code_success" = "手势密码设置成功";
+"wrong_gesture_pattern" = "两次密码不同,请重新设置";
+"forget_gesture_code" = "忘记手势密码";
+"login_other_account" = "其他账号登录";
+
+
+///////////////////////////////////////////////////////////////
+/*
+ 根控制器
+ */
+
+//"tab_main" = "首页";
+//"tab_investiment" = "理财";
+//"tab_discover" = "发现";
+//"tab_account" = "我的";
+//"tab_more" = "关于我们";
+
+
+
+"tab_main1" = "首页";
+"tab_investiment1" = "理财";
+"tab_discover" = "发现";
+"tab_account1" = "我的";
+"tab_more" = "关于我们";
+
+///////////////////////////////////////////////////////////////
+/*
+ 首页
+ */
+"tab_home_licai" = "精选理财";
+"tab_home_huzhu" = "互助保障";
+"tab_home_zhongchou" = "众筹计划";
+"tab_home_huodong" = "热门活动";
+"tab_home_jiekuan" = "借款申请";
+//"tab_home_item" = "乐巢投";
+//"tab_home_item1" = "兼顾灵活和收益，薪满益足";
+//"tab_home_item2" = "年化8.0-10.2%";
+//"tab_home_item3" = "期限5-45天，1000元起投";
+//"tab_home_item4" = "适合人群：互联网、银行理财人群。";
+//"tab_home_item5" = "乐巢投系列";
+//"tab_home_item6" = "收益领跑，稳健回报";
+//"tab_home_item7" = "年化9.0-10.2%";
+//"tab_home_item8" = "期限30-180天，1000元起投";
+//"tab_home_item9" = "适合人群：追求稳定高收益理财时间少的人群。";
+"tab_home_anquan" = "安全保障";
+"tab_home_volume" = "理财金券";
+"tab_home_brand" = "品牌介绍";
+"tab_home_activity" = "热门活动";
+"tab_home_income" = "累计收益(元)";
+"tab_home_leiji_money" = "平台累计投资(元)";
+"tab_home_leiji_person" = "平台用户突破(人)";
+"tab_home_person_num" = "平台用户突破(人)：";
+"tab_home_intr_money" = "截至目前,领投鸟平台累计投资总额(元)";
+"tab_home_bird_coin" = "砸金蛋赢鸟币";
+"lct_detail" = "领投鸟推出的精品散标，对接每一笔经过严格风控和银行审批的赎楼业务，真正短期标，理财低风险。";
+"lctxl_detail" = "领投鸟为投资人提供的本金自动循环出借及到期自动转让退出的理财工具，充分提高资金利用效率。";
+"tab_home_annualIncomeText" = "年化收益";
+
+"cooperation_title" = "家财盗抢互助计划";
+"cooperation_subtitle" = "给家多一份保护 乐居更舒心";
+///////////////////////////////////////////////////////////////
+
+/*
+ 砸金蛋
+ */
+"hit_egg_surplus_number" = "您还有 %ld 次砸蛋机会";
+"no_hit_time" = "很抱歉，您没有砸蛋机会了";
+"hit_again" = "再砸一次";
+"look_bird_coins" = "查看鸟币";
+"hit_egg_choose2" = "恭喜您，获得%@鸟币";
+"hit_fail" = "很遗憾本次砸蛋没有中";
+"hit_rare" = "砸蛋秘籍";
+"hit_eggs_look" = "查看砸蛋秘籍";
+"hit_egg_role_1" = "\t亲爱的小伙伴们，想知道怎么让自己的荷包满满吗？想知道怎么砸蛋必中吗？那就来了解一下我们的活动规则吧：";
+"hit_egg_role_2"= "每天登录领投鸟理财App，都将获得一次砸蛋签到的机会，有一定机率能够中奖。中奖金额第二天会以鸟币形式发放到您的账户中。";
+"hit_egg_role_3" = "Q：如何获得更多砸蛋的机会？";
+"hit_egg_role_4" = "A：如下的一些行为可能会增加您获得砸蛋机会的次数：\n\t 1.单笔投资固定收益类产品满2000时，将会获得一次砸蛋机会；\n\t 2.您直接邀请的好友完成绑卡成功之后，将会获得一次砸蛋机会。";
+"hit_egg_role_5" = "Q：为什么我投资了2000元却没有获得砸蛋机会呢？";
+"hit_egg_role_6" = "A：每人每天通过投资最多只能获得三次砸蛋机会，但是邀请好友绑卡的次数是不设上限的。";
+"hit_egg_role_7" = "Q : 我把砸蛋界面关掉了，怎么再重新去砸蛋？";
+"hit_egg_role_8" = "A : 在App首页右侧有砸金蛋的入口，点击后就能重新打开砸蛋界面。";
+
+///////////////////////////////////////////////////////////////
+
+/*
+ 注册到邦卡  注册 登录 实名 邦卡  免密 里面有公共的抽取出来
+ */
+
+
+//登录
+"mobile_number_hint" = "请输入手机号";
+"new_password_hint" = "请输入密码";
+"verifycode_hint" = "请输入4位验证码";
+"forgotten_password" = "忘记密码?";
+"get_correct_mobile" = "请输入正确的手机号码";
+"password_info1" = "密码应该为6-18位英文字母与数字的组合";
+"captcha_error" = "验证码输入错误，请重新输入";
+"reset_password"="重置密码";
+"login_again" = "重新登录";
+
+//注册
+"unregister_prompt" = "现在注册即可获得万元理财金和88元返现券，真的不尝试一下吗？";
+"unregister_drop_coupon" = "放弃理财金";
+"register_placeholder_telephone" = "推荐使用银行预留手机号";
+"register_placeholder_mobile_code" = "请输入验证码";
+"get_verify_code" = "获取验证码";
+
+"niaoren_agreement" = "《在线服务协议》";
+"have_recommend" = "我有推荐人";
+"recomment_code" = "请输入推荐人手机号";
+"complete_register" = "完成注册";
+"register_prompt" = "登录密码应该为6-18位英文字母与数字的组合；\n\n如有推荐人，请输入推荐人手机号。";
+"register_toast2" = "请填写正确的推荐人的号码";
+"feed_back_submit" = "正在提交...";
+"cong_register_success" = "恭喜您注册成功";
+"register_success_prompt" = "我们资金由第三方支付联动优势托管\n投资前请先进行实名开户认证";
+"user_auth_cancel" = "暂不认证";
+"user_auth_now" = "立即认证";
+"reget_verify_code" = "重新获取";
+"resendable_after_seconds" = "%d秒后重试";
+//实名
+
+"fund_account" = "资金托管账户";
+"load_details_realname_tv" = "真实姓名";
+"load_details_idcard_tv" = "身份证号";
+"load_details_idcard_hint" = "请输入您的身份证号";
+"write_identy" = "请输入身份证号码";
+"input_your_name" = "请输入您的姓名";
+"user_auth_tip" = "为了确保您的资金安全,请先开通第三方资金托管账户";
+"immediately_opened_2" = "立即开通";
+"wait_please" = "请等待...";
+"write_name" = "请填写姓名";
+"input_hanzi" = "最多输入10个汉字";
+"write_error_identy" = "您输入的身份证号码有误";
+"abnew_submmit" = "%ds后可重新提交申请";
+
+//银行卡
+
+"bank_card_setting" = "银行卡设置";
+"check_change_card" = "查看换卡进度";
+"change_bank_card_title" = "更换银行卡";
+"change_card_success" = "换卡成功";
+"change_bank_ok" = "更换成功";
+"apply_ok_tag" = "已成功更换银行卡";
+"submit_success" = "申请成功";
+"change_bank_wait_check" = "请耐心等待审核";
+"connect_service" = "联系客服";
+"change_bank_error" = "您的申请可能存在异常，请联系客服";
+"bankcard_owner" = "持卡人";
+"support_card_own" = "开户银行";
+"card_id" = "卡号";
+"change_bank_card_1"="根据实际情况的不同可能需要提交额外资料";
+"change_bank_card_2"="如在换卡中有任何疑问\n可拨打客服电话";
+"change_bank_card_3"="可拨打客服电话400-999-9980";
+"change_bank_fail"= "申请失败";
+
+//实名认证邦卡
+
+"apply_ok_btn" = "我知道了";
+"begin_change_card" = "开始换卡";
+
+"card_self_name" = "持卡人姓名：%@";
+"support_card_1" = "请选择开户银行";
+"input_bankcard_id" = "请输入银行卡卡号";
+
+"choose_bank" = "选择银行";
+"charge_limit" = "(单笔充值限额%.1f万元，单日%.1f万元)";
+"current_account_title4" = "《资金托管协议》";
+"boundBank_Des" = "您尚未添加银行卡";
+"boundBank_Des2" = "目前仅只支持一张银行卡";
+"add_Button" = "添加银行卡";
+// 换卡
+"way_2" = "方式二";
+"sure_way2" = "确认选择方式二";
+"see_again" = "再看看";
+"detail_way" = "1. 用户手持身份证照片正反面，显示本人脸和手臂，图片应能看清身份证号、人像；\n2. 用户手持原卡、新卡正反面照片，显示本人脸和手臂，图片应能看清银行卡卡号；\n3. 若原卡已丢失的，出示原卡挂失证明，无法出具原卡挂失证明的，提供原卡的开户证明或银行开具的一个月内交易流水并加盖银行公章；（＊若用户丢失原卡开户证明或原卡已销毁等相关资料，请用户提供换卡证明，且证明上需印有银行柜台鲜章以便审核。）\n4. 无新卡图片的，提供新卡开户单子或新卡与身份证关联关系证明（银行出具）；\n5.新卡不能换成邮储卡；";
+"change_card" = "更换银行卡";
+"call" = "呼叫";
+"des_Label_1" = "选择方式二需要提供以下资料";
+"des_Label_2" = "发送至邮箱service@lingtouniao.com";
+"des_Label_3" = "自提交资料2-3个工作日，登录App查看是否换卡成功";
+"des_Label_4" = "为了保障您的帐号安全，需要提供如下资料以便人工审核";
+
+"phone_des_Label" = "您在办理过程中如有任何疑问请直接拨打客服热线：400-999-9980";
+
+"supply_Des2_Label" = "请提供下方资料发送至邮箱service@lingtouniao.com";
+
+
+
+//修改登陆密码
+"reset_password" = "重设密码";
+"get_password" = "找回密码";
+"mobile_number_forgetpwd_hint" = "请输入手机号";
+"captcha" = "验证码";
+"identity_card" = "身份证号";
+"get_correct_verifycode" = "请输入正确验证码";
+"get_correct_idcard" = "请输入正确身份证号";
+
+
+"password_reset" = "密码重设";
+"modify_password1" = "请输入6~18位新密码";
+"modify_password2" = "请再次输入新密码";
+"password_reset_confirm" = "确认重设";
+"password_not_match" = "两次密码不一致，请重新输入";
+
+//重置支付密码
+"step_1" = "1. 点击\"重置支付密码\"";
+"step_2" = "2. 联动优势将新的支付密码以短信方式发送到你的手机";
+"step_3" = "3. 查看手机短信，获取新的支付密码";
+
+//修改支付密码
+"modify_trade_pwd_original" = "请输入原6位支付密码";
+"modify_trade_pwd_new" = "请输入新6位支付密码";
+"modify_trade_pwd_tip" = "我们将会编辑短信 GGMM#原密码#新密码 (例如:GGMM#123456#234567)发送至联动优势修改您的支付密码,支付密码只能是6位数字. ";
+
+
+/*
+ 理财  理财分为  理财列表  标的详情  投资
+ */
+"annual_income" = "年化收益率";
+"invest_date" = "投资期限";
+"deadline_unit_year" = "年";
+"deadline_unit_month" = "个月";
+"deadline_unit_day" = "天";
+"money_unit_wan" = "万";
+"money_unit_yuan" = "元";
+
+// 理财列表
+"investments" = "投资理财";
+"inverstime_xsb" = "新手标";
+"inverstime_tyb" = "体验标";
+"inverstime_gqb" = "已结束";
+"inverstime_lct" = "短期项目";
+"inverstime_lctxl" = "中长期项目";
+"inverstime_sxt" = "活期项目";
+"inverstime_mjz" = "募集中";
+
+"remaining_amount" = "剩余金额";
+"amount_wan_decimal" = "%.2f万";
+"tab_detail_take" = "随存随取";
+"product_start_amount2" = "%@元起投";
+"product_purchase_limit" = "仅可购买一个新手项目";
+"product_item_buy" = "立即体验";
+"product_stop_invest" = "停止投资";
+"product_ty_buy_btn" = "立即购买";
+"product_reservation" = "立即预约";
+
+"datas_repeat" = "重复数据！";
+//详情
+"product_tag1" = "新手";
+"product_tag3" = "限次";
+"product_tag4" = "限额";
+"product_tag5" = "可转";
+"xs_hint" = "仅限首次投资用户购买";
+"sta_invest_amount" = "起投金额";
+"product_total_amount" = "项目总金额";
+"productt_ty_detail_profit_type" = "收益方式 (以鸟币形式返还)";
+"revenue_type" = "收益方式";
+"revenue_date" = "起息日期";
+"productt_ty_detail_know_tyb" = "了解体验标";
+"product_details_progress" = "项目进度:";
+"product_details_remain_amount" = "剩余金额:";
+
+"product_detail_title" = "详情";
+"product_details_detail" = "项目详情";
+"product_details_record" = "购买记录";
+"product_detail_dialog1" = "首笔投资有奖励，先下手为强！（每天仅能获得一次哦）";
+"product_detail_dialog2" = "理财项目成功扫尾，神秘奖励收入囊中！";
+"product_detail_hint" = "投资金额为%@～%@元";
+"product_detail_hint1" = "投资金额%@~10000元";
+"product_start_amount" = "起投金额%@元";
+"product_details_max_money" = "可投最大金额";
+"product_usable_balance" = "  可用余额%.2f元";
+"product_usable_balance_and_bird_coin" = "  可用余额%.2f元，可用%.2f鸟币";
+"product_last_buyer" = "%@投资";
+"product_raise_end_date" = "%@截止";
+
+"total_limit_amount"="单人投资限额：%@万";
+"single_limit_amount"="单笔投资限额：%@万";
+
+"product_tyb_deadline" = "立即到账";
+// 投资
+"actually_pay" = "    实付：0.00元";
+"amount_reality_pay" = "    实付：%.2f元";
+"choose_coupon_title" = "有效期至%@";
+"invest_success" = "投资成功";
+"invest_complete" = "完成投资";
+"confirm_buy" = "确认投资";
+"amount_should_pay" = "应付金额";
+"amount_yuan_text" = "%@元";
+"bird_coin" = "鸟币";
+"amount_yuan_decimal_plus" = "%.2f元＋%.2f元";
+"due_date" = "到期日期";
+"use_bird_money" = "可用%@鸟币抵扣%@元";
+"text_usable_money_volume" = "可用理财金券";
+"text_choose_money_volume" = "请选择理财金券";
+"choose_other_coupon" = "选择其他理财金券";
+"have_coupon_code" = "我有赠送券码";
+"no_coupon_code" = "请输入理财金券兑换码";
+"exist_coupon_code" = "您输入的券码已存在!";
+
+"purchase_money" = "购买金额";
+"used_coupon" = "已使用理财金券";
+"bird_coin_deduction" = "鸟币抵扣";
+"actually_pay_money" = "实付金额";
+"amount_niaobi_decimal" = "%.2f鸟币";
+"product_buy_dialog2_content" = "您的余额不足,请去先充值，当前余额%.2f元,还须充值%.2f元";
+"authresult_Des2" = "种瓜得瓜，种钱得钱，鸟哥为你赚钱加油！";
+"object_award" = "实物奖励";
+
+// 购买记录
+"product_buy_record" = "购买记录";
+"product_buy_record_txt" = "共%@笔";
+"invest_user" = "投资用户";
+"invest_amount" = "投资资金";
+"invest_time" = "投资时间";
+
+/**
+ *  随心投
+ */
+
+"current_hold_amount" = "我的随心投";
+"my_current_account_birdcoin" = "每万元收益";
+"interest_day" = "¥1.51/天";
+"current_account_total" = "随心投总金额";
+"my_current_account_tzqx" = "累计收益";
+"my_current_account_qtje1" = "昨日收益";
+"apply_out_money" = "已申请转出金额：50.00元";
+"current_is_over" = "随心投已满标，暂不支持转入";
+"out_money" = "已申请转出金额：%@元";
+
+
+"current_details" = "随心投明细";
+
+// 转入成功
+"sunday" = "星期日";
+"monday" = "星期一";
+"tuesday" = "星期二";
+"wednesday" = "星期三";
+"thursday" = "星期四";
+"friday" = "星期五";
+"saturday" = "星期六";
+"current_buy_success" = "恭喜您，成功购入随心投%.2f元";
+"today_date_and_week" = "%@ %@(今天)";
+"today" = "今天";
+"calculate_revenue" = "开始计算收益";
+"get_revenue" = "收益到账";
+
+"current_account_out_success" = "转入成功";
+"current_account_check_success" = "查看我的随心投";
+
+// 转出成功
+"acount_out_success" = "转出成功";
+"cong_suixintou" = "恭喜你，随心投转出成功.";
+"complete_out" = "完成转出";
+"roll_out_success_prompt" = "转出的金额，将于明天下午15:00前转出至可用余额。可至“我的账户”－“可用余额”中查看。";
+// 转出
+"my_current_account_out" = "活期持有金额";
+"my_current_account_money_edit" = "可转出金额：";
+"my_current_account_money_purchase" = "可购金额：";
+"current_account_out_tips" = "1.转入的金额，当天即产生收益，第二天可以查看昨日收益。\n2.若当天转入，当天即可转出，则不会产生收益。\n3.转出的金额，第二天下午15:00前会被转出到可用余额。\n4.当持有金额<%ld元时,不产生收益。";
+"current_account_title2" = "我已同意";
+"invest_agreement" = "《投资协议》";
+"huiyuangongye_agreement" = "《会员公约》";
+"current_account_out_btn" = "确认转出";
+"current_account_in_btn" = "确认转入";
+"money_error" = "请输入正确金额";
+"current_acount_toast3" = "活期购买金额必须大于1元";
+
+"current_account_out_title" = "转出";
+"roll_out_amount_error_title" = "转出金额无效";
+"current_acount_toast5" = "转出金额不能大于持有金额";
+
+// 转入
+"current_buy_in" = "本次转入随心投金额";
+"current_buy_out" = "转入后随心投余额";
+"current_buy_tomorrow" = "明日预期收益";
+
+"current_account_in_title" = "转入";
+"usable_balance_insufficient_title" = "您的可用余额不足";
+"usable_balance_insufficient_message" = "您的可用余额不足，充值马上购买";
+
+///////////////////////////////////////////////////////////////
+/*
+ 我的帐户  帐户首页  任务  理财金圈  我要借款  账户设置  消息中心  充值 体现
+ */
+
+//账户首页
+"hello" = "您好，%@";
+"check_income_detail" = "查看收益明细>";
+"uncollected_revenue" = "待收收益(元)>";
+"uncollected_bird_coin" = "待收鸟币";
+"deposit" = "充值";
+"with_draw_title" = "提现";
+"total_assets_with_unit" = "总资产(元)";
+"usable_balance_with_unit" = "可用余额(元)";
+"usable_bird_coin" = "可用鸟币";
+
+"mytask_title" = "我的任务";
+"get_task_reward" = "获得任务奖励";
+"my_friends" = "合伙人";
+"get_partner_reward" = "获得合伙人奖励";
+"myinvest_title" = "我的投资";
+"lntcount_product_tab" = "已投 %@ 个理财产品";
+"text_money_volume" = "理财金券";
+"usable_coupon" = "共 %@ 张可用";
+"loan_title" = "我要借款";
+"loca_detail" = "让家的梦想更简单";
+"account_settings" = "账户设置";
+"account_settings_detail" = "实名、绑卡、修改密码";
+
+"tab_new_account_sxt" = "随心投";
+"tab_new_account_sxt1" = "随存随取";
+"current_deposit_suggestment" ="投资随心投后将不能再投资新手标，推荐您先投资收益率较高的新手标。\n是否先去投资新手标？";
+"do_not" = "不用了";
+
+//可用余额 可用鸟币
+
+"bank_detail_balance" = "余额明细";
+"bird_detail" = "鸟币明细";
+"bird_help" = "使用帮助";
+"total_amount" = "总金额";
+"project" = "项目";
+"occurMoney" = "发生金额";
+"remindBalance" = "余额";
+"occurDate" = "日期";
+"occuredMoney" = "金额";
+
+//总资产 待收收益
+"current_total_amount" = "随心投总额";
+"total_assets_all_money" = "总资产明细";
+"usable_balance" = "可用余额";
+"toreceive_principal" = "待收本金";
+"blocked_balance" = "冻结余额";
+
+
+"recived_balance" = "已收收益";
+"total_balance" = "总收益";
+"toreceive_balance" = "待收收益";
+"revenue_record" = "收益明细";
+
+
+"income_type_1" = "固定收益类收益";
+"income_type_2" = "随心投收益";
+"income_type_3" = "鸟币收益";
+"income_type_4" = "理财金券收益";
+"income_type_5" = "合伙人收益";
+
+//合伙人
+"tab_new_account_welcomeId" = "您好";
+
+"my_employee" = "员工";
+"my_agent" = "代理商";
+"new_partner_nomal" = "普通合伙人";
+"new_partner_gold" = "金牌合伙人";
+"new_partner_diamond" = "钻石合伙人";
+"new_partner_grade" = "合伙人等级";
+"new_partner_yuan" = "累计奖励(元)>";
+
+"partner_pro_title" = "合伙人特权";
+"new_partner_award" = "推荐有奖";
+"new_partner_income" = "收益提成";
+"new_partner_badge" = "徽章特权";
+
+"partner_friend" = "好友统计";
+"new_partner_num" = "注册人数";
+"new_partner_bangka" = "绑卡人数";
+"new_partner_man" = "投资人数";
+
+"new_partner_qbcode" = "生成二维码";
+"new_partner_persion" = "补充推荐人";
+"more" = "更多";
+"have_no_partner" = "未补充";
+
+"partner_intend" = "马上邀请好友";
+"add_recommend_mobile" = "补充推荐人手机号";
+
+"parter_earning_title1" = "我邀请的好友";
+"parter_earning_title2" = "好友邀请的好友";
+"parter_count_title1" = "我推荐的好友";
+"parter_count_title2" = "好友推荐好友";
+
+"partner_earning_list_header_type" = "好友名称";
+"partner_zhuce" = "已注册好友";
+"partner_bangka" = "已绑卡好友";
+"partner_touzi" = "已投资好友";
+"partner_register_time" = "注册日期";
+"partner_friend_moblie" = "好友手机";
+
+"qrcode" = "扫一扫二维码，加入领投鸟理财";
+"my_qrcode" = "我的二维码";
+"save_qrcode" = "保存图片";
+"qrcode_setting" = "请打开 设置-隐私-照片 来进行设置";
+"save_success" = "保存成功";
+"save_failure" = "保存失败";
+
+
+"reword_money" = "累计奖励";
+"partner_earning_list_header_shouyi" = "投资收益";
+"partner_earning_list_header_jiangli" = "奖励收益";
+
+//账户设置
+
+"quit_app" = "退出登录";
+
+"user_auth" = "实名认证";
+"user_auth_false" = "未实名";
+"user_auth_true" = "已实名";
+
+"bind_bank_card" = "银行卡认证";
+"bank_card_unbind" = "未认证";
+"bank_card_binded" = "已认证";
+
+"deposit_nopwd" = "免密充值";
+"unopen" = "未开通";
+"opened" = "已开通";
+
+
+"modify_login_password" = "修改登录密码";
+"reset_trade_password" = "重置支付密码";
+"modify_trade_password" = "修改支付密码";
+"modify_gesture_password" = "修改手势密码";
+"new_message_notification" = "新消息通知";
+
+"reset_trand_passwpord_error" = "您还没有实名认证，请先实名认证";
+"open_deposit_pwd_hint" = "开通免密充值后，下次充值将不再需要输入支付密码。您也可以随时解除。\n是否立即开通？";
+"relieve_deposit_pwd_hint" = "解除免密充值后，每次充值都将需要输入支付密码。解除后您也可以以后再次开通。是否解除？";
+"cancel_2" = "还是算了";
+"relieve_2" = "解除";
+
+"notification_receive_new" = "接收新消息通知";
+"notification_opened" = "已开启";
+"notification_unopened" = "未开启";
+"notification_prompt" = "如果你要关闭或开启新消息通知，请在iphone的“设置”-“通知”功能中，找到应用程序“领投鸟”进行修改";
+
+
+
+//任务
+"tab_new_account_wdrw" = "我的任务";
+"new_region_title" = "新手专区";
+"task_jinjie" = "进阶专区";
+"task_xianshi" = "活动专区";
+"new_region_title_content" = "轻松五步，步步有彩蛋哦！";
+"task_jinjie_content" = "不断进阶，挑战新任务！";
+"task_xianshi_content" = "过一秒钟都不行，快来拿下ta!";
+
+"welcome_lingtouniao" = "欢迎来到领投鸟";
+"lingtouniao_content" = "领投鸟理财专注于互联网房产消费金融，理财产品全部来自真实的房产交易，资金主要用于借款人房产交易过程中的短期资金周转。";
+"task_get_award" = "马上领奖";
+
+"task_should_login_before_get_award" = "登录后方可领取奖励，是否马上登录？";//ios
+"task_progress_text" = "已完成 %ld%%";
+"advanced_task_award" = "奖励：%@";
+"new_region_btn2" = "马上去";
+"new_region_btn3" = "领取奖励";
+"new_region_btn4" = "已完成";
+"advance_task_doing" = "正在进行";
+"task_have_award" = "已领奖";
+"task_will_start" = "待开始";
+"task_end" = "已结束";
+"task_award_done" = "领取奖励";
+"complete_toast" = "完成";
+"next_task" = "继续下一个任务";
+"task_success" = "任务完成";
+"task_new_region" = "开启投资新手标任务";
+"check_task_status" = "您可以到“我的任务”中查看并领取奖励！";
+
+//消息中心 tk
+
+"message_center_title" = "消息中心";
+"message_center_dialog_content" = "是否将所有消息标记为已读状态?";
+"message_center_allread" = "标记为全读";
+
+//理财金券
+
+"input_coupon_exchange_code" = "请输入理财金券兑换码";
+"exchange" = "兑 换";
+"coupon_exchang_success" = "恭喜你，兑换成功";
+"coupon_empty_title" = "您还没有理财金券";
+"coupon_jiaxi" = "加息券";
+"coupon_usage" = "投资返现";
+"coupon_tiyan" = "体验抵扣";
+"donate" = "赠送";
+"detailDonate" = "点击复制赠送给好友,需投资下单时使用";
+"donateSuccess" = "恭喜你！复制成功！";
+"donateShare" = "您可以通过QQ、微信、短信等方式,将返现券分享给您的好友！";
+"donateCopyContent" = "【领投鸟理财】我赠送你一张%@(%@)，在投资下单确认页面填入代码%@即可使用使用，%@日前有效，赶紧去使用吧!";
+"donateCode" = "券码：";
+"donteCodeDetail" = "券码：%@";
+
+//我的投资
+
+"my_plan_invest" = "投标中";
+"anxintou_chiyou" = "持有中";
+"my_depositing_invest" = "还款中";
+"anxintou_huankuan" = "已还款";
+
+
+"orderAmount" = "投资金额(元)";
+"new_myinvest_list_item_orderRevenue" = "到期收益(元)";
+"new_myinvest_list_item_annualIncomeText" = "年化收益";
+"new_myinvest_list_item_payDate" = "交易时间：%@";
+"new_myinvest_list_item_endDate" = "到期日期：%@";
+"productt_ty_detail_name" = "新手体验标";
+
+
+"anxintou" = "安心投";
+
+"my_anxin" = "我的安心投";
+"anxintou_rate" = "预期年化收益率";
+"anxintou_month" = "投资期限(月)";
+"anxintou_wan" = "投资金额(万)";
+"anxintou_total_wan" = "预计累计收益(万)";
+"anxintou_time" = "交易时间";
+"anxintou_date" = "到期日期";
+
+"exchange_time_down" = "交易时间↓";
+"exchange_time_up" = "交易时间↑";
+"expire_time_down" = "到期时间↓";
+"expire_time_up" = "到期时间↑";
+
+
+//借款  tk
+"selected_city" = "请选择城市";
+"load_details_city_tv" = "所在城市";
+"select_belong_city" = "请选择所在城市";
+
+"load_details_loan_account_tv" = "借款金额";
+"loan_money" = "请输入借款金额";
+
+"load_details_total_price_tv" = "房屋总价";
+"load_details_total_price_hint" = "请输入房屋总价";
+"house_currect_money" = "请输入正确的房屋总价";
+
+"load_details_broker_tv" = "中介名称";
+"load_details_broker_hint" = "请输入中介名称";
+
+"load_details_email_tv" = "邮箱地址";
+"input_email" = "请输入您的邮箱";
+"email_correct_address" = "请输入正确的邮箱地址";
+
+"waitting_patience" = "借款申请提交成功，请耐心等待";
+
+"load_details_sex_tv" = "性别";
+"loan_boy" = "男";
+"loan_girl" = "女";
+
+"loan_btn" = "立即借款";
+
+"load_details_submit_tv" = "立即申请";
+
+"borrow_status" = "借款进度";
+
+
+
+"load_details_city_hint" = "上海";
+"load_details_city_hint2" = "杭州";
+"load_details_city_hint3" = "宁波";
+
+"ten_thousand" = "万";
+"below_ten_thousand" = "万以内";
+
+//借款进度
+
+"telephone_can_call" = "保持电话畅通！";
+
+"progress_tag_ok1" = "我们的借款专员将尽快与您联系，请您这几天保持电话畅通！如果我们的借款专员未能联系到你，将会驳回您的申请！";
+"progress_tag_ok2" = "请根据专员的要求提供相应资料！";
+"progress_tag_ok3" = "我们会通过短信或邮件通知审核结果！请注意查收！";
+"progress_tag_ok4" = "您的借款专员会与您联系具体放款事宜！";
+
+"progress1" = "填写借款申请";
+"progress2" = "借款专员与您联系";
+"progress3" = "提交材料，借款审批";
+"progress4" = "审批结束，借款支付";
+"progress_ok2" = "恭喜您！您的借款申请已经受理！";
+"progress_ok3" = "恭喜您！您的资料已经提交审核！";
+"progress_ok4" = "恭喜您！您的借款申请已经通过审核！";
+
+"progress_failed" = "很遗憾！您的借款申请未通过！";
+"progress_tag_failed" = "具体事宜请联系您的借款专员或拨打客服电话400-999-9980";
+
+//充值
+
+"getvalue_success" = "到账提醒!";
+"transfer_account_money" = "你的资金托管账户到账%.2f元，请注意查看余额变化。";
+"key_prompt_mgs" = "单笔限额%@万元,单日限额%@万元";
+"deposit_amount" = "充值金额";
+"input_amount1" = "请输入充值金额";
+"account_balance" = "账户余额：%.2f元";
+"mianmi_charge" = "开通免密充值";
+"charge_descr" = "充值金额立即到账，如遇充值高峰，可能会略有延迟，最晚当天内到账";
+"last_number" = "尾号%@";
+
+"with_draw_balance4" = "账户余额";
+"deposit_success" = "充值成功";
+"confirm_rechange" = "确认充值";
+
+"mianmi_help_con" = "开通免密充值后，以后每次充值将无需再输入支付密码。由于领投鸟理财采用资金同卡进出制度，这将充分确保您的资金安全。\n您也可以在账户设置中随时关闭该功能。";
+
+"tips_message" = "［温馨提示］";
+
+//提现
+
+"with_draw_input_title" = "提现金额";
+"with_draw_input_message" = "请输入提现金额";
+"with_draw_all" = "全部提现";
+"with_draw_time_explain" = "提现时间说明";
+"with_draw_cost_explain" = "提现费用说明";
+"with_draw_balance2" = "账户余额:%@元";
+"with_draw_cost" = "手续费:0.00元";
+"with_draw_cost2" = "手续费:2.00元";
+"get_amount" = "实际到账金额:";
+"no_money_yuan" = "0.00元";
+"with_draw_note" = "1.工作日17点前进行提现，系统当天受理；\n2.17点后进行提现，将于下一个工作日12点之前受理；\n3.每周一因要受理周五17点以后及周末的提现申请，可能会略有延时。";
+"with_draw_note2" = "1.每人每月可免费提现3次；\n2.单月提现超过3次时，每次扣除2元手续费；\n3.手续费默认使用鸟币抵扣，鸟币不足时，则从可用余额中扣除。";
+
+"deduct_fee_with_two_bird_coin" = "用2鸟币抵扣手续费";
+"with_draw_toast4" = "余额不足抵扣手续费,请下月再试!";
+
+"with_draw_tonight" = "约今天19点前,如为节假日则顺延至下个工作日";
+"with_draw_tomorrow" = "约下一个工作日12点前";
+"with_draw_arrival_hint4" = "实际到账:%.2f元\n本月剩余免费提现次数:%ld次\n到账时间:%@\n是否确认提现？";
+"import_tip" = "重要提示";
+"with_draw_confirm" = "确认提现";
+"with_draw_toast3" = "提现金额不能大于当前余额";
+
+
+//众筹
+"crowdfunding" = "众筹";
+"my_Crowdfunding" = "我的众筹";
+"des_Crowfunding" = "众筹改变人生";
+"joined_Crowfunding" = "已参与";
+"project_Total" = "项目总额";
+"joined_Person" = "参与人数";
+"get_Reward" = "可获奖励";
+"granis_Sand" = "聚沙成塔";
+
+"hot_Activity" = "热门活动";
+"num_Person" = "人";
+
+//互助
+"mutual" = "互助";
+"my_Mutual" = "我的互助";
+"des_Mutual" = "互助改变命运";
+"lost_Rise" = "已失效";
+"joined_Time" = "参与时间: %@";
+"remain_Money" = "剩余金额: %@元";
+"joined_RightNow" = "立即加入>";
+"release_Home" = "让安家更安心";
+
+//收货地址
+"editAddress" = "编辑地址";
+"addAddress" = "添加地址";
+"store" = "保存";
+"inPutIsNotPull" = "输入框不能为空";
+"detailAddressNotLess" = "详细地址不能少于5个字";
+"updateSuccess" = "更新成功";
+"managerGetAddress" = "管理收货地址";
+"isDeleteAddress" = "是否要删除此收货地址";
+"deleteSuccess" = "删除成功";
+"addGoodsAddress" = "添加收货地址";
+"edit" = "编辑";
+"delete" = "删除";
+"getGoodsPerson" = "收货人";
+"writeGoodsName" = "请填写收货人姓名";
+"phoneNumber" = "手机号码";
+"writeGoodsPhoneNum" = "请填写收货人手机号码";
+"ownAreas" = "所在地区";
+"plsSelect" = "请选择";
+"plsWriteDetailAddressNotLes" = "请填写详细地址,不少于5个字";
+
+
+///////////////////////////////////////////////////////////////
+/*
+ 关于我们
+ */
+"tab_more_feedback" = "意见反馈";
+"tab_more_score" = "去评分";
+"tab_more_about" = "关于领投鸟理财";
+"tab_more_welcome" = "欢迎页";
+"tab_more_help" = "帮助中心";
+"tab_more_phone1" = "客服电话";
+"tab_more_share" = "分享给好友";
+
+"application_version_and_build" = "版本号:%@. Build:%@";
+
+"uncommitted_suggestion" = "您的建议还未提交，是否返回？";
+"feedback_hint" = "如您的问题要马上反馈，请联系公众号 “领投鸟” ";
+"empty_suggestion_error" = "建议内容不能为空";
+"feed_back_success" = "提交成功";
+

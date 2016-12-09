@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="CouponTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6a-zJ-SX1">
+                        <rect key="frame" x="24" y="14" width="238" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kXZ-8F-7Gy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stz-iY-hf4">
+                        <rect key="frame" x="24" y="42" width="248" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-Ja-luD">
+                        <rect key="frame" x="24" y="44" width="288" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14.5" id="1zF-XA-YDY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Q6a-zJ-SX1" secondAttribute="trailing" constant="50" id="6aM-Kw-qkq"/>
+                    <constraint firstItem="Q6a-zJ-SX1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="XMk-n6-RRj"/>
+                    <constraint firstItem="stz-iY-hf4" firstAttribute="top" secondItem="Q6a-zJ-SX1" secondAttribute="bottom" constant="8" id="flA-7S-4fs"/>
+                    <constraint firstItem="QbY-Ja-luD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="kTM-pd-6Ve"/>
+                    <constraint firstItem="Q6a-zJ-SX1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="oLr-Z3-7Yd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QbY-Ja-luD" secondAttribute="trailing" id="qit-v6-EDq"/>
+                    <constraint firstItem="QbY-Ja-luD" firstAttribute="top" secondItem="stz-iY-hf4" secondAttribute="bottom" constant="2" id="sHQ-zn-ctl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="stz-iY-hf4" secondAttribute="trailing" constant="40" id="stp-89-hdP"/>
+                    <constraint firstItem="stz-iY-hf4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="y1G-dB-mLl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="couponDescLabel" destination="stz-iY-hf4" id="EYI-dN-F8g"/>
+                <outlet property="couponLabel" destination="Q6a-zJ-SX1" id="Bnh-Id-u3T"/>
+                <outlet property="productDueDayLabel" destination="QbY-Ja-luD" id="PKj-4u-0SG"/>
+            </connections>
+            <point key="canvasLocation" x="-44" y="8"/>
+        </tableViewCell>
+    </objects>
+</document>

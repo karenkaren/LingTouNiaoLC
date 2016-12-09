@@ -1,0 +1,100 @@
+
+[TrackingUtility]  wrap for tracking events
+
+[HandleUrlUtil] handle for url invoke
+
+
+项目文件结构如下：
+Network  网络请求相关
+
+Tools  一些有用的方法，扩展
+
+Vender 没用pod管理的第三方框架
+
+Common
+
+ Common目录下有 1.Macro 宏定义，全局引用  2.core  3.Social 4.BaseViewController  5.Model  6.View
+
+
+Home 首页
+
+
+Investment 投资理财
+
+Account  我的帐户
+
+More   关于我们
+
+Other 引导页 tabBarController
+
+
+[BaseDataEngine]
+silentAPIs, if you have an api call which don't need report error, show waiting, add it to the silentApi list
+
+[baseviewcontroller]
+params, we'll add this in basevc and basetablevc's api****. so in client code, you don't need to add this explicitly.
+showNavigationBarSeparator, show/hide navigation bar's shadow separator
+
+
+[LTNUtilsHelper]
+里面加了个方法  + (void)actionWhenLogin:(VoidBlock)block onVC:(UIViewController *)vc;
+
+
+
+//TODO:code review 44 高度统一  liujie     enum --->NSEnum
+
+[[IQKeyboardManager sharedManager] setEnable:YES]; 全部打开
+
+//TODO: 输入法矫正去掉方法
+
+
+//不要使用，NamedPhonePad。如果只有搜狗输入法，而且要输入中文，没法输入
+_txtNameField.keyboardType = UIKeyboardTypeNamePhonePad;
+
+get方式的http，搜索下面关键字
+request url
+可用拿到url，直接执行就可以模拟app请求
+
+
+
+发布须知：
+
+确保一下参数设置正确
+AlwaysShowGuide 0
+AlwaysHasLogin 0
+JPushIsProduction YES
+
+#define BUILD_FOR_RELEASE
+
+
+test svn zhengchengfeng
+
+
+代码规范：
+
+1、当参数过长时，每个参数占用一行，以冒号对齐。
+2、如果方法名比参数名短，每个参数占用一行，至少缩进4个字符，且为垂直对齐（而非使用冒号
+对齐）。如：
+//实际上是对齐的，copy过来后有些变形
+- (void)writeA:(NSString *)firstStr
+        withBBBBBBBBBBB:(NSString *)nextStr
+        withCCCCCC:(NSString *)lastStr
+
+
+3、 如果类声明中包含多个protocal，每个protocal占用一行，缩进2个字符。如:
+@interface RootViewController : UITableViewController<</p>
+UITableViewDelegate,
+UITableViewDataSource,
+UITextFieldDelegate,
+UITextViewDelegate
+ 
+>{
+……
+}
+
+4.未完成的代码块，有疑问的代码块，觉得有风险的代码，一定要打 TODO：
+5.注释要写啊啊  类 文件 方法 注释 尽量用 VVDocumenter 小的注释语句 ，变量注释 ，内容不多 用“//”
+多多实用“#pragma mark”，方便阅读代码
+
+merge to master
+

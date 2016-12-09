@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2de5c6e5-969d-8547-880b-4fc594cd9aad++505" : {
+
+    },
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2de5c6e5-969d-8547-880b-4fc594cd9aad++505" : 0,
+    "835FBC46774DF5128B865F3CC589F0F242A2C631" : 0,
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++505" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B8D9DB40-3AE2-4181-B619-C63C3829FFB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2de5c6e5-969d-8547-880b-4fc594cd9aad++505" : "source\/",
+    "835FBC46774DF5128B865F3CC589F0F242A2C631" : "lingtouniao_IOS\/",
+    "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++505" : "trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "lingtouniao",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "lingtouniao\/lingtouniao.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.1.15:8443\/svn\/pangu_ios",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2de5c6e5-969d-8547-880b-4fc594cd9aad++505"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.ltn.com:liujie\/lingtouniao_IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "835FBC46774DF5128B865F3CC589F0F242A2C631"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.18.23:8443\/svn\/ios_ltn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "cecf4f94-a542-ec43-a5b7-e4a893c68f3b++505"
+    }
+  ]
+}

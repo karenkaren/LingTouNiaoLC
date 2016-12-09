@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>session</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<script type="text/javascript">
+    
+    
+    
+
+
+    window.onload = function(){
+        function isIPad (userAgent) {
+            return (userAgent.indexOf("iPad") > -1);
+        }
+        function isIPhone (userAgent) {
+            return (userAgent.indexOf("iPhone") > -1);
+        }
+        function isIOS (userAgent) {
+            return isIPad(userAgent) || isIPhone(userAgent);
+        }
+        function isAndroid (userAgent) {
+            return (userAgent.indexOf("Android") > -1) ||
+                (userAgent.indexOf("Linux") > -1);
+        }
+        // User agent string from navigator
+        var userAgent = navigator.userAgent;
+        // Name of mobile OS
+        var mobiOS = isAndroid(userAgent) ? "android" :
+            (isIOS(userAgent) ? "ios" : "unknow");
+        // Config of iOS/Android OS methods
+        var succFuncCfg = {
+            ios: {
+                getSession: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=getSessionKey&callback=callbackBlock';
+                    }
+            
+                },
+                
+                
+                showAlert: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=showAlert&param={"title":"123","content":"igjoitgjierjgierjog","type":"1"}';
+                    }
+                    
+                },
+                
+                getPhoneNumber: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=getPhoneNumber&callback=callbackBlock';
+                    }
+                    
+                },
+                getAppVersion: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=getAppVersion&callback=callbackBlock';
+                    }
+                },
+                shouldUpdateApp: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=shouldUpdateApp&callback=callbackBlock';
+                    }
+                },
+                
+                
+                updateApp: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=updateApp';
+                    }
+                },
+
+                
+                shouldLogin: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=shouldLogin';
+                    }
+                },
+                
+                loginTimeout: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=loginTimeout';
+                    }
+                },
+                
+                
+                shareWithParameters: {
+                    invoke: function () {
+                        window.location.href = 'http://callclient?method=shareWithParameters&param={"title":"123","desc":"igjoitgjierjgierjog","icon":"http://image.tupian114.com/20140417/08423403.png.thumb.jpg","url":"http://120.55.184.234:8080/h5/share.html"}';
+                    }
+                }
+            },
+            android: {
+                getSession: {
+                    invoke: function () {
+                        window.jsinterface.notifyAndroid_getSessionKey();
+                    }
+                }
+            }
+        
+        }
+        // Click event handle
+        function successClick(type) {
+            succFuncCfg[mobiOS][type].invoke();
+        }
+        var SUB = document.getElementById('submitBtn');
+            ses = document.getElementById('session');
+            
+        SUB.onclick = function(){
+            var content = successClick('shareWithParameters');
+            ses.innerHTML=content;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+
+
+
+// Click event handle
+function callbackBlock(paramters) {
+    alert(paramters);
+}
+
+</script>
+<body class="success">
+<section class="content">
+    <button id="submitBtn">确定</button>
+    <p id="session">123</p>
+</section>
+</body>
+</html>

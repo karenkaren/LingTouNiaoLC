@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmInvestViewController">
+            <connections>
+                <outlet property="agreementview" destination="Fdb-1q-bGq" id="1ok-pc-Cnt"/>
+                <outlet property="checkBox" destination="2I8-Tj-qhh" id="6gc-o7-vIa"/>
+                <outlet property="current_account_title2Label" destination="Qgv-zT-daJ" id="XwG-SQ-dWP"/>
+                <outlet property="invest_agreement_Button" destination="ef7-W7-cHL" id="DcS-gC-Mdt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="128" y="717"/>
+        </view>
+        <view contentMode="scaleToFill" id="Fdb-1q-bGq">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-Ts-qFi">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgv-zT-daJ">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="UWm-xJ-Js8"/>
+                                <constraint firstAttribute="width" secondItem="Qgv-zT-daJ" secondAttribute="height" multiplier="20:7" id="kKn-te-Pmy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-W7-cHL">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="8lo-J9-WLF"/>
+                                <constraint firstAttribute="width" secondItem="ef7-W7-cHL" secondAttribute="height" multiplier="3:1" id="gdr-EP-jLc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="《投资协议》"/>
+                            <connections>
+                                <action selector="agreementClick:" destination="-1" eventType="touchUpInside" id="nXb-ij-ZhV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2I8-Tj-qhh" customClass="CheckBox">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2I8-Tj-qhh" secondAttribute="height" multiplier="1:1" id="Va4-sq-eXc"/>
+                                <constraint firstAttribute="width" constant="25" id="eO9-Gr-EHL"/>
+                                <constraint firstAttribute="height" constant="25" id="ilO-Yf-vTo"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="checked_single"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2I8-Tj-qhh" firstAttribute="leading" secondItem="nFb-Ts-qFi" secondAttribute="leading" constant="8" id="CZW-4O-aPI"/>
+                        <constraint firstItem="2I8-Tj-qhh" firstAttribute="top" secondItem="nFb-Ts-qFi" secondAttribute="top" id="Zld-q1-30w"/>
+                        <constraint firstAttribute="width" secondItem="nFb-Ts-qFi" secondAttribute="height" multiplier="139:26" constant="5" id="dZF-0i-Vra"/>
+                        <constraint firstItem="Qgv-zT-daJ" firstAttribute="leading" secondItem="2I8-Tj-qhh" secondAttribute="trailing" constant="1" id="eVb-Rx-tz4"/>
+                        <constraint firstAttribute="width" constant="144" id="jSN-Rc-3fu"/>
+                        <constraint firstItem="ef7-W7-cHL" firstAttribute="leading" secondItem="Qgv-zT-daJ" secondAttribute="trailing" constant="-18" id="mHs-fC-Loa"/>
+                        <constraint firstItem="Qgv-zT-daJ" firstAttribute="top" secondItem="ef7-W7-cHL" secondAttribute="top" constant="3" id="mWX-Vu-EC5"/>
+                        <constraint firstItem="Qgv-zT-daJ" firstAttribute="centerY" secondItem="2I8-Tj-qhh" secondAttribute="centerY" constant="1" id="yA3-3Z-3Rp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nFb-Ts-qFi" firstAttribute="centerX" secondItem="Fdb-1q-bGq" secondAttribute="centerX" constant="3" id="9S7-Gm-g3d"/>
+                <constraint firstItem="ef7-W7-cHL" firstAttribute="top" secondItem="Fdb-1q-bGq" secondAttribute="top" constant="8" id="pV0-IC-huc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="207" y="318.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked_single" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

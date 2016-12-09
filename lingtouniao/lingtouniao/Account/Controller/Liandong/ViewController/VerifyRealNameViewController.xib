@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyRealNameViewController">
+            <connections>
+                <outlet property="des1Label" destination="D8Y-yw-Hcg" id="n8O-Hy-SjR"/>
+                <outlet property="footerView" destination="udV-Mb-RYd" id="E1P-Du-6H6"/>
+                <outlet property="manageDelegateButton" destination="bRy-hv-Vq5" id="RWD-Ff-236"/>
+                <outlet property="submitBox" destination="dzD-8z-OcI" id="v48-mN-CVz"/>
+                <outlet property="submitButton" destination="Pon-ip-vJ4" id="6dK-2U-ySM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="253" y="598"/>
+        </view>
+        <view contentMode="scaleToFill" id="udV-Mb-RYd">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzW-hb-jyl" userLabel="container">
+                    <rect key="frame" x="50" y="8" width="220" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我已阅读并同意" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8Y-yw-Hcg">
+                            <rect key="frame" x="34" y="3" width="87" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="87" id="a0v-T3-qbs"/>
+                                <constraint firstAttribute="width" secondItem="D8Y-yw-Hcg" secondAttribute="height" multiplier="20:7" constant="27" id="rsT-yb-CzP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzD-8z-OcI" customClass="CheckBox">
+                            <rect key="frame" x="8" y="0.0" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="7ny-fj-tVp"/>
+                                <constraint firstAttribute="width" secondItem="dzD-8z-OcI" secondAttribute="height" multiplier="1:1" id="GUH-1C-ByN"/>
+                                <constraint firstAttribute="width" constant="25" id="V3i-Ga-oEm"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="checked_single"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRy-hv-Vq5">
+                            <rect key="frame" x="108" y="0.0" width="112" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="bRy-hv-Vq5" secondAttribute="height" multiplier="3:1" constant="49" id="esX-xC-Ydz"/>
+                                <constraint firstAttribute="width" constant="112" id="hRH-eo-ueg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="《资金托管协议》"/>
+                            <connections>
+                                <action selector="delegatebutton:" destination="-1" eventType="touchUpInside" id="anr-Wj-7cd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dzD-8z-OcI" firstAttribute="leading" secondItem="KzW-hb-jyl" secondAttribute="leading" constant="8" id="CL0-Et-1sd"/>
+                        <constraint firstItem="D8Y-yw-Hcg" firstAttribute="centerY" secondItem="dzD-8z-OcI" secondAttribute="centerY" constant="1" id="CiV-e3-027"/>
+                        <constraint firstItem="D8Y-yw-Hcg" firstAttribute="leading" secondItem="dzD-8z-OcI" secondAttribute="trailing" constant="1" id="XhI-MY-CtD"/>
+                        <constraint firstItem="dzD-8z-OcI" firstAttribute="top" secondItem="KzW-hb-jyl" secondAttribute="top" id="d8K-uv-SjY"/>
+                        <constraint firstItem="D8Y-yw-Hcg" firstAttribute="top" secondItem="bRy-hv-Vq5" secondAttribute="top" id="j0K-Hv-KHj"/>
+                        <constraint firstAttribute="width" constant="220" id="j4b-xB-tcd"/>
+                        <constraint firstAttribute="width" secondItem="KzW-hb-jyl" secondAttribute="height" multiplier="139:26" constant="81" id="kIc-Sr-s7J"/>
+                        <constraint firstItem="bRy-hv-Vq5" firstAttribute="leading" secondItem="D8Y-yw-Hcg" secondAttribute="trailing" constant="-13" id="y2u-T7-VwM"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pon-ip-vJ4">
+                    <rect key="frame" x="20" y="50" width="280" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Pon-ip-vJ4" secondAttribute="height" multiplier="152:21" constant="-24" id="Jwg-l2-aL4"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submitClick:" destination="-1" eventType="touchUpInside" id="PYb-9D-VVx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Pon-ip-vJ4" secondAttribute="trailing" constant="20" id="GHn-xg-g4V"/>
+                <constraint firstItem="Pon-ip-vJ4" firstAttribute="leading" secondItem="udV-Mb-RYd" secondAttribute="leading" constant="20" id="agM-6F-jI1"/>
+                <constraint firstItem="Pon-ip-vJ4" firstAttribute="top" secondItem="KzW-hb-jyl" secondAttribute="bottom" constant="16" id="cCT-cf-GUd"/>
+                <constraint firstItem="bRy-hv-Vq5" firstAttribute="top" secondItem="udV-Mb-RYd" secondAttribute="top" constant="11" id="mlV-Hu-feI"/>
+                <constraint firstItem="KzW-hb-jyl" firstAttribute="centerX" secondItem="udV-Mb-RYd" secondAttribute="centerX" id="xSt-Id-F7L"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="278" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checked_single" width="24" height="24"/>
+    </resources>
+</document>

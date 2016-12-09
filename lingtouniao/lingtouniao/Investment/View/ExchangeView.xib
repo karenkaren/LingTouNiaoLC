@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ExchangeView" customClass="ExchangeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="使用赠送券码兑换理财金券" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="z6H-33-Qrt">
+                    <rect key="frame" x="33" y="24" width="203" height="50"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                            <color key="value" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgj-Xy-1IZ">
+                    <rect key="frame" x="236" y="24" width="106" height="50"/>
+                    <color key="backgroundColor" red="0.91764705879999997" green="0.33333333329999998" blue="0.015686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <state key="normal" title="兑换">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bpj-iZ-x5d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z6H-33-Qrt" firstAttribute="height" secondItem="Wgj-Xy-1IZ" secondAttribute="height" id="AKb-fC-1Nx"/>
+                <constraint firstItem="z6H-33-Qrt" firstAttribute="width" secondItem="Wgj-Xy-1IZ" secondAttribute="width" multiplier="406/212" id="F7O-aC-xMQ"/>
+                <constraint firstItem="z6H-33-Qrt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="33" id="FGX-jM-0Be"/>
+                <constraint firstAttribute="trailing" secondItem="Wgj-Xy-1IZ" secondAttribute="trailing" constant="33" id="GFZ-C1-a0E"/>
+                <constraint firstAttribute="bottom" secondItem="Wgj-Xy-1IZ" secondAttribute="bottom" id="L8Y-VZ-oPR"/>
+                <constraint firstItem="Wgj-Xy-1IZ" firstAttribute="leading" secondItem="z6H-33-Qrt" secondAttribute="trailing" id="TPe-bh-rGt"/>
+                <constraint firstItem="Wgj-Xy-1IZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="aSE-42-0A7"/>
+                <constraint firstItem="z6H-33-Qrt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="t9H-85-ThB"/>
+                <constraint firstAttribute="bottom" secondItem="z6H-33-Qrt" secondAttribute="bottom" id="tyP-lc-3dT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="exchangeTextField" destination="z6H-33-Qrt" id="2EQ-8T-dbH"/>
+            </connections>
+            <point key="canvasLocation" x="-261" y="-19"/>
+        </view>
+    </objects>
+</document>
